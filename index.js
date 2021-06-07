@@ -15,7 +15,7 @@ app.use('/posts', postRoutes);
 app.get('/', (req, res) =>{
     res.send("Hello")
 })
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT;
 
 mongoose.connect(process.env.CONNECTION_URL, {
     useNewUrlParser :true,
